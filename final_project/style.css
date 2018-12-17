@@ -1,0 +1,355 @@
+#lightbox{
+	background-color:#eee;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	max-width: 925px;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+
+/*Everything*/
+body {
+	margin: 0px;
+	font-family: century schoolbook;
+}
+
+#container {
+	margin: auto;
+	overflow: hidden;
+	border-left: double;
+	border-right: double;
+	border-color: #553C21;
+	min-height: 1000px;
+	background-color: #ab7842;
+	color: #553C21;
+}
+
+h1 {
+	text-align: center;
+}
+
+.nav-button-pic {
+	width: 100px;
+	padding:
+}
+
+hr {
+	border-color: #553C21;
+}
+
+footer {
+	border-top: dotted;
+	border-left: double;
+	border-right: double;
+	border-color: #553C21;
+	background-color: #ab7842;
+}
+
+.foot-desktop {
+	display: none;
+}
+
+.foot-button {
+	width: 60%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.foot-button-pic {
+	width: 100%;
+}
+
+.image-row {
+	margin: auto;
+	margin-bottom: 10px;
+	border-color: #553C21;
+}
+
+.image-frame {
+	float: left;
+	margin: 0px 1px 0px 1px;
+	border: solid;
+	border-color: #553C21;
+}
+
+.gallery-image {
+	padding: 5%;
+	max-width:90%;
+	max-height:90%;
+}
+
+.footnote {
+	font-size: 8pt;
+}
+
+.timeline-row {
+	margin: auto;
+	border: solid;
+}
+
+.timeline-left {
+	float: left;
+	border-right: double;
+	font-size: 20pt;
+}
+
+.timeline-right {
+	float: right;
+	padding-top: 10px;
+}
+
+.section-break {
+	border: double;
+}
+
+.benefits {
+	margin: auto;
+	width: 90%;
+}
+
+.links {
+	margin: auto;
+	width: 90%;
+}
+
+a:link {
+	font-weight: bold;
+	color: #553C21;
+}
+
+a:visited {
+  color: #773C21;
+}
+a:hover {
+  color: #FFEBCD;
+  cursor: ;
+}
+
+a:active {
+  color: #A0522D;
+}
+
+/*Desktop view*/
+@media screen and (min-width: 481px) {
+body {
+	background-image: url("images/sepia-background.jpg");
+	background-attachment: fixed;
+}	
+	
+#container {
+width: 1000px;			
+}
+
+.header-desktop {
+	display: block;
+	width: 40%;
+	padding-left: 30%;
+	padding-right: 30%;
+	min-height: 50px;
+}
+
+.header-pic {
+	width: 500px;
+}
+
+.header-mobile {
+	display: none;
+}
+.nav-desktop {
+	display: block;
+	width: 100%;
+	min-height: 20px;
+}
+
+.nav-button {
+	width: 16%;
+	float: left;
+}
+
+.nav-span {
+	width: 4%;
+	float: left;
+}
+
+.nav-button-pic {
+	width: 100px;	
+}
+
+.left-span {
+	width: 4%;
+	float: left;
+	color: #ab7842;
+}
+
+.nav-mobile {
+	display: none;
+}
+
+.foot-desktop {
+	display: block;
+	margin: auto;
+	width: 1000px;
+	min-height: 60px;
+}
+
+.foot-mobile {
+	display: none;
+}	
+
+section {
+	float: left;
+	width: 700px;
+	border-right: double;
+}
+
+aside {
+	display: block;
+	float: right;
+	width: 247px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.image-row {
+	width: 960px;
+	min-height: 320px;
+}
+
+.image-frame {
+	width: 232px;
+	min-height: 320px;
+}
+
+.timeline-row {
+	width: 900px;
+	height: 120px;
+}
+
+.timeline-left {
+	width: 77px;
+	height: 100px;
+	padding: 10px
+}
+
+.timeline-right {
+	width: 800px;
+	height: 100px;
+}
+
+iframe{
+	width: 560px;
+	height: 315px;
+}
+
+
+
+}
+
+/*Mobile view*/
+@media screen and (max-width: 480px) {
+body {
+	font-size: 10pt;
+}	
+
+#container {
+	width: 100%;			
+}
+
+.header-desktop {
+	display: none;
+}
+
+.header-mobile {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.nav-desktop {
+	display: none;
+}
+
+.nav-mobile {
+	width: 10%;
+	padding: 0% 2% 2% 2%;
+}
+
+.nav-mobile-content {
+	display: none;
+	position: relative;
+	min-width: 300px;
+	width: 100%;
+	box-shadow: 0px 8px 16px 0px;
+}
+
+.nav-mobile:hover .nav-mobile-content {
+	display: block;
+}
+
+aside {
+	display: none;
+}
+
+.foot-mobile {
+	width: 100%;
+	min-height: 100px;
+}
+
+.image-row {
+	width: 96%;
+	min-height: 280px;
+}
+
+.image-frame {
+	width: 45%;
+	min-height: 280px;
+}
+
+.gallery-image {
+	max-height: 252px;
+}
+
+.timeline-row {
+	width: 95%;
+	height: 160px;
+}
+
+.timeline-left {
+	width: 13%;
+	height: 160px;
+}
+
+.timeline-right {
+	width: 85%;
+	height: 160px;
+}
+
+.date {
+	transform: rotate(270deg);
+	transform-origin: left top 10;
+}
+
+iframe {
+	width: 92%;
+	height: 25%;
+}
+}
+
